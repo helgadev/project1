@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 300;
+    left: 0;
+    background-color: rgb(228, 171, 118);
+    overflow-x: hidden;
+    padding-top: 50px;
+    }
+
+    .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #444141;
+    display: block;
+    }
+
+    .main {
+    /* margin-left: 160px; Same as the width of the sidenav */
+    /* font-size: 28px; Increased text to enable scrolling */
+    padding: 0px 300px;
+    }
+
+    .sidenav a:hover {
+    color: #0c0c0c;
+    }
+
+  /* .fakeimg {
+    height: 400px;
+    background: rgb(245, 90, 28);
+    } */
+
+    /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 75%;
+    height: 75%;
+    padding-top: 50px;
+    padding-left: 100px;
+  }
+
+  
+    
+
+  </style>
+</head>
+<body style="background: rgb(228, 203, 184);">
+
+  <div class="jumbotron text-right jumbotron-fluid" style="margin-bottom:0;  background: rgb(241, 139, 6)">
+    <h2 style="color:rgb(112, 94, 94); margin-right:150px; font-style: italic;">My Page</h2>
+  </div>
+
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Что посмотреть</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Что прочитать</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Что приготовить</a>
+        </li>
+      </ul>
+    </nav>
+      
+  <div class="sidenav">
+    <a href="#What_look">Что посмотреть</a>
+    <a href="#What_read">Что прочитать</a>
+    <a href="#What_cook">Что приготовить</a>
+    <!-- <a href="#contact"></a> -->
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-6">
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators" style="padding-right: 50px;">
+            <li data-target="#demo" data-slide-to="0" class="active" style="background-color:rgb(247, 80, 15)"></li>
+            <li data-target="#demo" data-slide-to="1" style="background-color:rgb(247, 80, 15)"></li>
+            <li data-target="#demo" data-slide-to="2" style="background-color:rgb(247, 80, 15)"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../image/comedy/doolittle.jpg" alt="comedy" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="../image/fantazy/maleficent.jpg" alt="fantazy" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="../image/mult/boss baby.jpg" alt="multfilms" width="1100" height="500">  
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon" style="background-color:rgb(247, 80, 15)"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon" style="background-color:rgb(247, 80, 15)"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active" style="background-color:rgb(247, 80, 15)"></li>
+            <li data-target="#demo" data-slide-to="1" style="background-color:rgb(247, 80, 15)"></li>
+            <li data-target="#demo" data-slide-to="2" style="background-color:rgb(247, 80, 15)"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../image/comedy/doolittle.jpg" alt="comedy" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="../image/fantazy/maleficent2.jpg" alt="fantazy" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="../image/mult/boss baby.jpg" alt="multfilms" width="1100" height="500">  
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon" style="background-color:rgb(247, 80, 15)"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon" style="background-color:rgb(247, 80, 15)"></span>
+          </a>
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+</body>
+</html>
